@@ -8,6 +8,36 @@ A full-stack application for browsing GitHub users with cursor-based pagination:
 
 This project provides a strongly-typed, full-stack experience for exploring GitHub's public users API with interactive pagination and a responsive UI.
 
+## Agents
+
+This project includes GitHub Copilot agents configured for specialized development workflows:
+
+### **backend-developer**
+Specialized for ASP.NET Core backend development. Use this agent for:
+- Adding or modifying controllers and API endpoints
+- Creating or updating services and dependency injection
+- Working with models and data structures
+- Configuring middleware and HTTP client behavior
+- Debugging and fixing backend issues
+
+### **frontend-developer**
+Specialized for React frontend development. Use this agent for:
+- Creating and updating React components and pages
+- Working with hooks and component state
+- Building or integrating services and API clients
+- Styling and responsive design
+- Fixing frontend bugs and performance issues
+- Delegates complex backend changes to the backend-developer agent
+
+### **Explore**
+Fast read-only codebase exploration and Q&A agent. Use this agent for:
+- Understanding code structure and patterns
+- Finding specific implementations or dependencies
+- Answering questions about how things work
+- Code review and architecture analysis
+- Safe to call in parallel with other operations
+- Specify desired thoroughness: quick, medium, or thorough
+
 ```
 ┌─────────────────────────────┐        ┌──────────────────────────────┐        ┌─────────────────┐
 │  React Frontend             │        │  .NET Backend                │        │  GitHub API     │
